@@ -1,28 +1,25 @@
-# Dashboard Laboratoria
+# Data Dashboard
 
- Las TMs han solicitado que construyamos una herramienta web donde puedan ver estos datos fácil y rápidamente. Y nos comentaron que estos son los datos que revisan normalmente:
+* **Track:** _Common Core_
+* **Curso:** _Creando tu primer sitio web interactivo_
+* **Unidad:** _Producto final_
 
-```
- 1. El total de estudiantes presentes por sede y generación
- 2. El porcentaje de deserción de estudiantes.
- 3. La cantidad de estudiantes que superan la meta de puntos en promedio de todos los sprints cursados.
- La meta de puntos es 70% del total de puntos en HSE y en tech.
- 4. El porcentaje que representa el dato anterior en relación al total de estudiantes.
- 5. El Net Promoter Scope (NPS) promedio de los sprints cursados. El NPS se calcula en base a la encuesta
- que las estudiantes responden al respecto de la recomendación que darían en Laboratoria
- 6. La cantidad y el porcentaje que representa el total de estudiantes que superan la meta de puntos técnicos
- en promedio y por sprint.
- 7. La cantidad y el porcentaje que representa el total de estudiantes que superan la meta de puntos HSE
- en promedio y por sprint.
- 8. El porcentaje de estudiantes satisfechas con la experiencia de Laboratoria
- 9. La puntuación promedio de los profesores
- 10. La puntuación promedio de los jedi masters
- ```
-## Adicionales:
+***
 
-Sería ideal poder mostrar los datos procesados en un gráfico como el diseño propone u otra alternativa
+## Flujo de trabajo
 
-Además tener un botón que permita indicar que una estudiante ha salido del Bootcamp y alterar los totales afectados por este cambio
+1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
+   de este repositorio.
 
-Proyecto elaborado por Esmeralda Radilla y Gabriela Colín
-https://erimcolin.github.io/Dashboard/
+2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
+   es `git clone` y su estructura normalmente se ve así:
+
+   ```bash
+   git clone https://github.com/<nombre-de-usuario>/freelancer.git
+   ```
+
+3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
+   (puedes solicitar apoyo de tus profes para este paso).
+
+> Nota: No olvides que es una buena práctica describir tu proyecto en este
+> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
