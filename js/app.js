@@ -111,8 +111,6 @@ var contadorStudentsTechHSe = 0;
 var porcentajeTotalStudentsTech = 0;
 var porcentajeTotalStudentsHSE = 0;
 
-
-
     for (var i=0; i < data[lugar][generacion]['students'].length; i++) {
 
       for (var j = 0; j < data[lugar][generacion]['students'][i]['sprints'].length; j++) {
@@ -254,6 +252,7 @@ var coders = function(nombre, activo){
   var parrafoNombre = document.createElement('p');
   var parrafoActivo = document.createElement('p');
   var email = document.createElement('p');
+  var perfil = document.createElement('p');
   // var parrafoSprints = document.createElement('p');
   var imagen = document.createElement('img');
   var divCoder = document.createElement('div');
@@ -265,15 +264,18 @@ var coders = function(nombre, activo){
   parrafoActivo.classList.add('activo');
   email.classList.add('email')
   divNameActive.classList.add('nameActive');
+  perfil.classList.add('perfil');
 
   parrafoNombre.innerText = nombre;
   parrafoActivo.innerText = "Is active: " + activo;
   email.innerText = nombre.toLowerCase() + '@laboratoria.la'
   // parrafoSprints.innerText = sprints;
+  perfil.innerText = 'Ver perfil';
 
   divNameActive.appendChild(parrafoNombre); //estos son los q agregué
   divNameActive.appendChild(parrafoActivo);
   divNameActive.appendChild(email); //este tambien
+  divNameActive.appendChild(perfil);
   divCoder.appendChild(imagen);
   divCoder.appendChild(divNameActive);
   // divCoder.appendChild(parrafoNombre);

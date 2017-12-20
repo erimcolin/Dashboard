@@ -8,18 +8,24 @@
 
 ## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+### Sobre el Producto
+En Laboratoria las Training Managers han solicitado que construyamos una herramienta web donde puedan ver los datos fácil y rápidamente. Y nos comentaron que estos son los datos que revisan normalmente:
+```
+1. El total de estudiantes presentes por sede y generación
+2. El porcentaje de deserción de estudiantes
+3. La cantidad de estudiantes que superan la meta de puntos en promedio de todos los sprints cursados.
+La meta de puntos es de 70% del total de puntos en HSE y en tech.
+4. El porcentaje que representa el dato anterior en relacion al total de estudiantes.
+5. El Net Promoter Scope (NPS) promedio de los sprints cursados.
+El NPS se calcula en base a la encuesta
+que las estudiantes responden al respecto de la recomendación que darían de Laboratoria
+6. La cantidad y el porcentaje que representa el total de estudiantes que supera la meta de
+puntos técnicos en promedio y por sprint
+7. La cantidad y el porcentaje que representa el total de estudiantes que supera la meta de puntos de
+HSE en promedio y por sprint
+8. El porcentaje de estudiantes satisfechas con la experiencia de Laboratoria
+9. La puntuación promedio de los profesores.
+10. La puntuación promedio de los jedi masters.
+```
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+Dashboard elaborado por Esmeralda Radilla y Gabriela Colín
