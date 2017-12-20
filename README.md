@@ -29,3 +29,4 @@ HSE en promedio y por sprint
 ```
 
 Dashboard elaborado por Esmeralda Radilla y Gabriela Colín
+https://erimcolin.github.io/Dashboard/
