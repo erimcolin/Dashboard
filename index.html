@@ -5,6 +5,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
     <section id="seccionInicial" class="contenedor">
@@ -20,7 +21,7 @@
     <section>
       <div class="">
         <article id="overview" class="contenido">
-          <select onchange="generaciones(this.value)">
+          <select id="seleccionar" onchange="generaciones(event)">
             <option>Selecciona una sede y generación</option>
             <option value = "AQP1" data-sede ="AQP" data-generacion ="2016-2">Arequipa Generación 2016-2</option>
             <option value = "AQP2" data-sede ="AQP" data-generacion ="2017-1">Arequipa Generación 2017-1</option>
@@ -36,13 +37,14 @@
           <section id="first-section">
             <div class="graphics">
               <h3>ENROLLMENT</h3>
-              <div class="enrolled">
+              <div id="enrolled">
                 <p># STUDENTS<br>CURRENTLY<br>ENROLLED</p>
               </div>
-              <div class="dropout">
+              <div id="dropout">
                 <p>% DROPOUT</p>
               </div>
-              <img src="assets/images/bar-graph.png" alt="">
+              <div id="piechart">grafica</div>
+              <!-- <img src="assets/images/bar-graph.png" alt=""> -->
             </div>
 
             <div class="graphics">
@@ -130,7 +132,6 @@
           </section>
         </article>
 
-
         <section id="students" class="contenido">
           <div class="divTextStudents">
             <h3>Specialization</h3>
@@ -176,7 +177,7 @@
         </article>
       </div>
     </section>
-    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

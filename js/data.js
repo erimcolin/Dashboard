@@ -5132,23 +5132,25 @@ var data = {
 };
 
 var selectOption = function(event){
+  var contenedorCoders = document.getElementById("container-students");
+  contenedorCoders.innerHTML = " "; //para limpiar
   var index = (event.target.selectedIndex);
-  console.log(index);
+  // console.log(index);
   var sede = event.target[index].dataset.sede;
-  console.log(sede);
-  var generacion = event.target[index].dataset.generacion;
-  console.log(generacion);
-  dataObtain(sede, generacion)
+  // console.log(sede);
+  var generation = event.target[index].dataset.generacion;
+  // console.log(generation);
+  dataObtain(sede, generation)
 }
 
-var dataObtain = function(sede, generacion){
-  var students = data[sede][generacion]['students'];
+var dataObtain = function(sede, generation){
+  var students = data[sede][generation]['students'];
   // console.log('hola');
   for (var i = 0; i < students.length; i++) {
     var nombre = students[i].name;
     // console.log(nombre);
     var activo = students[i].active;
-    console.log(activo);
+    // console.log(activo);
     // var sprints = students[i].sprints.length;
     // console.log(sprints);
     // var sprints = students[i].sprints;
@@ -5162,6 +5164,7 @@ var coders = function(nombre, activo){
   var divNameActive = document.createElement('div'); //para meter el parrafo active y nombre
   var parrafoNombre = document.createElement('p');
   var parrafoActivo = document.createElement('p');
+  var email = document.createElement('p');
   // var parrafoSprints = document.createElement('p');
   var imagen = document.createElement('img');
   var divCoder = document.createElement('div');
@@ -5171,13 +5174,17 @@ var coders = function(nombre, activo){
   divCoder.classList.add('coder');
   parrafoNombre.classList.add('name');
   parrafoActivo.classList.add('activo');
+  email.classList.add('email')
   divNameActive.classList.add('nameActive');
+
   parrafoNombre.innerText = nombre;
   parrafoActivo.innerText = "Is active: " + activo;
+  email.innerText = nombre.toLowerCase() + '@laboratoria.la'
   // parrafoSprints.innerText = sprints;
 
   divNameActive.appendChild(parrafoNombre); //estos son los q agregué
-  divNameActive.appendChild(parrafoActivo); //este tambien
+  divNameActive.appendChild(parrafoActivo);
+  divNameActive.appendChild(email); //este tambien
   divCoder.appendChild(imagen);
   divCoder.appendChild(divNameActive);
   // divCoder.appendChild(parrafoNombre);

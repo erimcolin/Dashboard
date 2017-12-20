@@ -120,9 +120,10 @@ button {
   width: 25%;
   padding: 20px;
   margin-left: 49px;
+  box-shadow: 6px 6px 6px #ffc107;
 }
 
-.enrolled, .dropout, .achievement, .total, .nps, .promoters {
+#enrolled, #dropout, .achievement, .total, .nps, .promoters {
   display: inline-block;
   text-align: center;
   padding: 10px;
@@ -140,6 +141,7 @@ button {
   margin-top: 46px;
   width: 90%;
   margin-left: 40px;
+  box-shadow: 6px 6px 6px #ffc107;
 }
 
 .overall, .target, .average, .HSE {
@@ -153,4 +155,30 @@ button {
 .imagen, .imagen1 {
   display: inline-block;
   margin-left: 30px;
+}
+
+.email{
+  margin-left: 59px;
+}
+
+#first-section {
+  vertical-align: bottom;
+  display: flex;
+}
+
+#piechart {
+  width: 280px;
+  height: 330px;
+}
+
+#last-section{
+  display: flex;
+  margin-top: 40px;
+}
+
+.teachers {
+  width: 90%;
+  margin-left: 45px;
+  padding: 20px;
+  background-color: white;
 }
